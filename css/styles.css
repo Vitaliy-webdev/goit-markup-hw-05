@@ -666,6 +666,7 @@ label {
 .close-btn-form:hover,
 .close-btn-form:focus {
     fill: #ffffff;
+    border: none;
 }
 
 .form-textarea {
@@ -814,10 +815,11 @@ label {
     gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     border: none;
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -833,6 +835,7 @@ label {
 
 .icon-footer-sub {
     fill: #fff;
+    margin-left: 16px;
 }
 
 .sub-div {
