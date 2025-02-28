@@ -527,6 +527,7 @@ img {
     position: fixed;
     top: 0px;
     left: 0px;
+    padding: 72px 24px 24px 24px;
     width: 100%;
     margin-bottom: 8px;
     height: 100%;
@@ -547,9 +548,9 @@ img {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 0 24px 0 24px;
-    max-height: 584px;
+    min-height: 584px;
     max-width: 408px;
+    padding: 0 24px 0 24px;
     top: 50%;
     left: 50%;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -646,7 +647,6 @@ label {
     top: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 100%;
     background-color: #e7e9fc;
     stroke-width: 1px;
     cursor: pointer;
@@ -661,6 +661,7 @@ label {
 .close-btn-icon:hover,
 .close-btn-icon:focus {
     fill: #fff;
+    border: none;
 }
 
 .close-btn-form:hover,
@@ -699,18 +700,18 @@ label {
 }
 
 .custom-checkbox {
+    display: inline-flex;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     fill: transparent;
     background-color: transparent;
     margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
@@ -746,12 +747,13 @@ label {
     border-radius: 4px;
     margin: 0 auto;
     min-width: 169px;
+    cursor: pointer;
     height: 56px;
+    font: 500 16px / 1.5 "Roboto", sans-serif;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
     align-items: center;
     justify-content: center;
-    font: 500 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.04em;
     margin-bottom: 24px;
     text-align: center;
@@ -803,6 +805,14 @@ label {
     color: #ffffff;
 }
 
+.modal-form-label {
+    margin-bottom: 8px;
+}
+
+.box-input {
+    margin-bottom: 16px
+}
+
 .btn-sub-footer {
     border-radius: 4px;
     padding: 8px 24px;
@@ -844,4 +854,8 @@ label {
 
 .footer-form {
     gap: 24px;
+}
+
+.modal-form-checkbox {
+    margin-bottom: 24px;
 }
